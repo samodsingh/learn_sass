@@ -1,0 +1,47 @@
+@mixin mycontent {
+    font-size: 20px;
+    @content;
+}
+
+.class1{
+    @include mycontent();
+
+}
+.class2{
+    @include mycontent(){
+        background-color: red;
+    }
+}
+
+@mixin device-tab{
+    @media (max-width : 1000px){
+        @content;
+    }
+}
+
+body{
+    background-color: orange;
+   @include device-tab();
+}
+//@media-----------
+@mixin media($width){
+    @media screen and(max-width : $width) {
+       @content; 
+    }
+}
+
+@include media(1300px){
+    body{
+        background-color: grey;
+    }
+}
+@include media(1000px){
+    body{
+        background-color: blue;
+    }
+}
+@include media(800px){
+    body{
+        background-color: yellow;
+    }
+}

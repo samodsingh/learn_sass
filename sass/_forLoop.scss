@@ -1,0 +1,56 @@
+ @for $i from 1 through 4{
+    
+    li:nth-child(#{$i}){
+        font-size: 20px;
+        background-color: darken(rgb(65, 17, 236), $i * 10%);
+    }
+
+ }
+// li:nth-child(1){
+//   font-size: 20px;  
+//   background-color: darken(rgb(65, 17, 236), $i * 10%);
+
+// }
+// li:nth-child(2){
+//   font-size: 20px;  
+//   background-color: darken(rgb(65, 17, 236), $i * 20%);
+
+// }
+// li:nth-child(3){
+//   font-size: 20px;  
+//   background-color: darken(rgb(65, 17, 236), $i * 30%);
+
+// }
+// li:nth-child(4){
+//   font-size: 20px;  
+//   background-color: darken(rgb(65, 17, 236), $i * 40%);
+
+// }
+//  ----------@each loop--------------
+//1. @each with simple list
+// $list : (normal, bold, italic);
+// @each $i in $list {
+//     .#{$i}{
+//         font-weight: $i;
+//     }
+// }
+//2. Multiple assignments (multi-dimensional list)
+
+// $list : ((normal, bold, 30px), (emphasis, italic, 15px));
+
+// @each $name, $styel, $size in $list{
+//    .#{$name}{
+//         font-weight:  $styel;
+//         font-size: $size;
+//     }
+// }
+
+//3. multiple assignment with Maps
+// $map : (normal: 12px, bold: 13px,  italic: 14px);
+
+// @each $i,$f-size in $map{
+//     .#{$i}{
+//         font-weight: $i;
+//         font-size: $f-size;
+//     }
+// } 

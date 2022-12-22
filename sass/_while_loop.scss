@@ -1,0 +1,7 @@
+$s : 10;
+@while $s <= 50{
+    .padding-#{$s}{
+        padding-left: 1px * $s;
+    }
+    $s : $s + 10;
+}

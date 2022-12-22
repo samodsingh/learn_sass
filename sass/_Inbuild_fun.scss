@@ -1,0 +1,16 @@
+// ---------------------number function--------------
+
+.test{
+    margin: abs(-10px);// cail() - uper value,floor() -  niche value,round() - .5 se uper and .5 niche value dega, max() - max value return, min() min value return, parcentage() - return to parcentage, random() return 0 to 10 random valu, unit() - return unit,
+ }
+
+ //-------------String function-------
+
+ .test2{
+   // font-family: unquote("Arial"); //quote() , unquote (), to-upper-case(), to-lower-case(), str-lenght() - count lenght,
+    //font-family: str-index("Helvetica Neue", "Hevetica");
+  //  font-family: str-insert("Helvetica Neue", " MOno ", 11);
+   font-family: str-slice("Helvetica Neue", 3, 10);
+   padding: unique-id();
+
+ }

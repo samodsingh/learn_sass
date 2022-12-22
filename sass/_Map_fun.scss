@@ -1,0 +1,7 @@
+$font-weight : ("regular" : 400, "medium" : 500, "bold" : 700);
+.test{
+  //  font-weight:  map-get($font-weight, "bold" );
+    //font-weight: map-keys($font-weight);
+//    font-weight: map-values($font-weight);
+ 
+}

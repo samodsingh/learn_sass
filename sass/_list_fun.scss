@@ -1,0 +1,15 @@
+$list : 10px, 20px, 30px;
+$list2 : 40px 50px 60px;
+
+.test{
+   // padding: length($list);
+   // padding: nth($list, 2);
+   // padding: set-nth($list , 2 , 3em );
+   //  padding: join($list, $list2 ); // separator - space, comma, auto
+   // padding: append($list, 40px ,auto);// separator - space, comma ,auto
+  //  padding: zip($list, $list2); // 10px 40px 20px 50px 30px 60px
+  // padding: index($list, 30px );  //return index 
+ // padding: list-separator($list); // check separator - comma / space
+  padding: is-bracketed($list); // check Is-brackete - true / false
+
+}

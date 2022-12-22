@@ -1,0 +1,21 @@
+$color_blue : blue;
+$color_red : red;
+
+$value1 : 10;
+$value2 : 5;
+
+.myClass{
+    padding: $value1 != $value2;
+}
+
+%toolbelt {
+    box-sizing: border-box;
+    padding: 6px 0;
+    width: 100px;
+  
+    &:hover { border: 2px rgba(#000, .5) solid; }
+  }
+  .action-buttons {
+    @extend %toolbelt;
+    color: #4285f4;
+  }

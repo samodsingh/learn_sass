@@ -1,0 +1,17 @@
+// $base-color: #ad4038;
+$base-color: green;
+
+.mybox1, .mybox2{
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+.mybox1{
+    background-color: $base-color;
+}
+.mybox2{
+    // background-color: darken($base-color, 10%);// lighten(), adjust-hue(),
+    // background: saturate($base-color, 50);// desaturate();
+    background: mix($base-color, red,.4);// transparentize($base-color, 0.5)
+}

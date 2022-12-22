@@ -1,0 +1,36 @@
+$test : 8;
+// p{
+//     @if $test < 10 {
+//         color: red;
+//     }@else{
+//         color: blue;
+//     }
+//     font-size: 20px;
+// }
+p{
+    @if $test > 10 {
+        color: red;
+    }@else if $test > 5 and $test < 10{
+        color: green;
+    }
+    @else{
+        color: blue;
+    }
+    font-size: 20px;
+}
+
+// use in mixin========
+@mixin changeColor ($value){
+    font-size: $value + px;
+    @if $value > 0 and $value <= 20{
+        color:green;
+    } @else if $value > 20 and $value <= 50 {
+        color : blue;
+    }@else{
+        color: red;
+    }
+}
+
+.test{
+    @include changeColor(15);
+}

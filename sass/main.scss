@@ -1,0 +1,116 @@
+// varable-------
+
+@import "./variables";
+
+@import "./function";
+// --------------contant-directive ---------
+@import "./contants";
+
+h1{
+    background-color: $color_blue;
+    color: rgb(255, 187, 0);
+}
+p{
+    // color: $color_blue;
+}
+// ------nesting-sass------
+
+div{
+    ul{
+        background-color: $color_red;
+        display: flex;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            display: inline-block;
+            text-transform: uppercase;
+            a{
+                text-decoration:none;
+            }
+        }
+    }
+}
+// mixin----------------------
+
+// @import "./mixin";
+
+// $color-green : green;
+// h1{
+//   @include commonproperty;
+// }
+// p{
+//     @include commonproperty; 
+// }
+// a{
+//     @include commonproperty;
+//     text-decoration: none;
+// }
+// ---------------------extends-------
+
+.box_container{
+    display: flex;
+}
+.box1{
+    border: 1px solid grey;
+    padding: 10px ;
+    width: 300px;
+}
+.box2{
+ @extend .box1;
+ margin: 10px;
+ background-color:green;
+}
+.box3{
+ @extend .box2;
+ background-color: yellow;
+}
+
+// ----------------operaters------------
+$val1 : 15;
+$val2 : 5;
+
+.mainclass{
+    padding: $val2 % $val1 + px;
+    p{
+        font-size: $val1 + px;
+       // font-size: sum(10,10)*1px;
+    }  
+    button{
+        font-size: $val1 + 2 + px;
+    }
+    
+    
+}
+// ----------interpolation----------------
+@import "../interpolation";
+// ------------forLoop-------------
+@import "./forLoop";
+
+//----------whileLoop---------------
+ @import "./while_loop";
+
+ //---------------If and else-----------
+ @import "./If_Else";
+
+
+//  ------------Inbuild functions----------
+@import "./Inbuild_fun";
+
+//-----------Map function----------
+@import "./Map_fun";
+//------------color- function----------
+
+@import "./color_fun";
+
+//----------List function----------
+@import "./list_fun";
+
+//----------selector function--------
+@import "./selector_fun";
+
+//-------------@media - @root------------
+@import "./media_@root";
+
+
+ 
+

@@ -1,0 +1,157 @@
+.myClass {
+  padding: true; }
+
+.action-buttons {
+  box-sizing: border-box;
+  padding: 6px 0;
+  width: 100px; }
+  .action-buttons:hover {
+    border: 2px rgba(0, 0, 0, 0.5) solid; }
+
+.action-buttons {
+  color: #4285f4; }
+
+.class1 {
+  font-size: 20px; }
+
+.class2 {
+  font-size: 20px;
+  background-color: red; }
+
+body {
+  background-color: orange; }
+
+@media screen and (max-width: 1300px) {
+  body {
+    background-color: grey; } }
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: blue; } }
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: yellow; } }
+
+h1 {
+  background-color: blue;
+  color: #ffbb00; }
+
+div ul {
+  background-color: red;
+  display: flex;
+  justify-content: space-around; }
+  div ul li {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase; }
+    div ul li a {
+      text-decoration: none; }
+
+.box_container {
+  display: flex; }
+
+.box1, .box2, .box3 {
+  border: 1px solid grey;
+  padding: 10px;
+  width: 300px; }
+
+.box2, .box3 {
+  margin: 10px;
+  background-color: green; }
+
+.box3 {
+  background-color: yellow; }
+
+.mainclass {
+  padding: 5px; }
+  .mainclass p {
+    font-size: 15px; }
+  .mainclass button {
+    font-size: 17px; }
+
+.gap-left-50 {
+  margin-left: 50px; }
+
+.gap-left-50 {
+  margin-left: 50px; }
+
+li:nth-child(1) {
+  font-size: 20px;
+  background-color: #340ebc; }
+
+li:nth-child(2) {
+  font-size: 20px;
+  background-color: #270a8d; }
+
+li:nth-child(3) {
+  font-size: 20px;
+  background-color: #1a075d; }
+
+li:nth-child(4) {
+  font-size: 20px;
+  background-color: #0d032e; }
+
+.padding-10 {
+  padding-left: 10px; }
+
+.padding-20 {
+  padding-left: 20px; }
+
+.padding-30 {
+  padding-left: 30px; }
+
+.padding-40 {
+  padding-left: 40px; }
+
+.padding-50 {
+  padding-left: 50px; }
+
+p {
+  color: green;
+  font-size: 20px; }
+
+.test {
+  font-size: 15px;
+  color: green; }
+
+.test {
+  margin: 10px; }
+
+.test2 {
+  font-family: "lvetica ";
+  padding: ua4a46699; }
+
+.mybox1, .mybox2 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid;
+  margin-bottom: 20px; }
+
+.mybox1 {
+  background-color: green; }
+
+.mybox2 {
+  background: #fe0100; }
+
+.test {
+  padding: false; }
+
+.container {
+  width: 1100px;
+  margin: 0px auto; }
+  @media screen and (max-width: 1150px) {
+    .container {
+      width: 900px; } }
+  @media screen and (max-width: 950px) {
+    .container {
+      width: 7 00px; } }
+
+.item {
+  color: red; }
+  .item-wrapper {
+    color: green; }
+    .item-wrapper img {
+      width: 100%; }
+  .item .item-child {
+    background-color: pink; }

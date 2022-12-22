@@ -1,0 +1,35 @@
+// $selector : selector-nest("ul", "li"); // firt index parent and secon index child
+// #{$selector}{
+//     width: 10px;
+// }
+
+// $selector : selector-nest(".abc" ,"&_xyz");  //selctor combin - .abc_xyz
+// $selector : selector-nest(".abc" ,"&:hover"); 
+ 
+// #{$selector}{
+//     width: 10px;
+// }
+
+ //$selector : selector-append(".abc","_active, _image"); // selector combin new name
+// $selector : selector-append("a",".active"); 
+// #{$selector}{
+//     width: 10px;
+// }
+
+// $selector : selector-replace("a .abc", ".abc", ".link"); // selector, replace, new
+// #{$selector}{
+//     width: 10px;
+// }
+// $selector : simpale-selectors("a.abc"); // a, abc 
+
+// $selector : is-superselector("a", "a:active") ;//exist in subselector = true /false
+// #{$selector}{
+//     width: 10px;
+// }
+
+// $selector : selector-unify("a.active", "a.disable"); // work in combinatio match 1 and 2 
+// #{$selector}{
+//     width: 10px;
+// }
+
+  
